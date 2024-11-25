@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security & Computers</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #101820;
+            color: #f5f5f5;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        /* Background Animation */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            animation: backgroundAnimation 8s infinite linear;
+            z-index: -1;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(45deg, #00c6ff, #0072ff); }
+            50% { background: linear-gradient(45deg, #ff0080, #ff5e00); }
+            100% { background: linear-gradient(45deg, #00c6ff, #0072ff); }
+        }
+
+        /* Centered Content */
+        .content {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #00ff99;
+            margin-bottom: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInText 4s ease-in-out forwards;
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Learn More Link Style */
+        .learn-more-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00c6ff;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .learn-more-link:hover {
+            background-color: #0072ff;
+            transform: translateY(-5px);
+        }
+
+        /* Learn More Section */
+        #learn-more {
+            background-color: #222;
+            padding: 80px 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 50px;
+            opacity: 0;
+            animation: fadeInSection 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeInSection {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        #learn-more h2 {
+            font-size: 48px;
+            color: #00ff99;
+            margin-bottom: 20px;
+        }
+
+        #learn-more p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            background-color: #222;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Initial Content -->
+    <div class="content">
+        <h1>Cyber Security & Computers</h1>
+        <p>Welcome to the digital world where your security is our priority. Learn how to protect yourself and your devices from online threats. Stay safe in the virtual space with the latest computer security measures and practices.</p>
+        <!-- Learn More Link with Smooth Scroll -->
+        <a href="#learn-more" class="learn-more-link">Learn More</a>
+    </div>
+
+    <!-- Learn More Section -->
+    <div id="learn-more">
+        <h2>Learn More About Cyber Security</h2>
+        <p><strong>Cybersecurity</strong> refers to the practice of defending computers, servers, mobile devices, and networks from digital threats such as unauthorized access, cyberattacks, and data breaches. In today's interconnected world, maintaining a high level of cybersecurity is crucial for protecting personal, financial, and sensitive information from malicious individuals and organizations.</p>
+
+        <h3>Why is Cyber Security Important?</h3>
+        <p>As our reliance on technology continues to grow, so does the risk of cyberattacks. Cyber threats come in many forms, including phishing, malware, ransomware, and social engineering. These threats can lead to significant financial loss, identity theft, and damage to your reputation or business. Proper cybersecurity measures help mitigate these risks and protect both individuals and organizations from harm.</p>
+
+        <h3>Common Types of Cyber Threats</h3>
+        <ul>
+            <li><strong>Phishing:</strong> Deceptive attempts to trick users into revealing sensitive information, such as usernames, passwords, or credit card details, by masquerading as trustworthy entities.</li>
+            <li><strong>Malware:</strong> Malicious software designed to harm or exploit any device or network. Common types include viruses, worms, and spyware.</li>
+            <li><strong>Ransomware:</strong> A type of malware that locks or encrypts a user's data and demands payment for its release.</li>
+            <li><strong>Social Engineering:</strong> Manipulating individuals into divulging confidential information by exploiting trust, often through phone calls or emails.</li>
+        </ul>
+
+        <h3>Best Practices for Cybersecurity</h3>
+        <ul>
+            <li><strong>Use Strong, Unique Passwords:</strong> Create complex passwords that are hard to guess, and avoid using the same password for multiple accounts.</li>
+            <li><strong>Enable Two-Factor Authentication (2FA):</strong> Add an extra layer of security by requiring a second form of verification, such as a text message or app, in addition to your password.</li>
+            <li><strong>Keep Software Updated:</strong> Regularly update your operating system, browsers, and apps to patch vulnerabilities that could be exploited by hackers.</li>
+            <li><strong>Be Cautious of Public Wi-Fi:</strong> Avoid accessing sensitive information while connected to unsecured networks, such as public Wi-Fi in cafes or airports.</li>
+            <li><strong>Backup Your Data:</strong> Ensure that important files and documents are regularly backed up in case of a security breach or system failure.</li>
+        </ul>
+
+        <h3>Stay Safe Online</h3>
+        <p>Cybersecurity is an ongoing process. By staying informed and adopting good security habits, you can protect yourself and your data from the ever-evolving landscape of cyber threats.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Cyber Security & Computers. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
