@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a curated list of resources for learning cybersecurity, from courses to blogs and books.">
+    <title>Cybersecurity Learning Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #121212;
+            color: #fff;
+            line-height: 1.6;
+            font-size: 16px;
+            animation: fadeIn 1.5s ease-in-out;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header Style */
+        header {
+            background: #1a1a1a;
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 5px solid #f39c12;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        /* Main Content Style */
+        main {
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            animation: fadeUp 1s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f39c12;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #ccc;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Resources List */
+        .resources-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .resource-card {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .resource-card h3 {
+            font-size: 1.8rem;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .resource-card p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .resource-card a {
+            color: #f39c12;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .resource-card a:hover {
+            color: #e67e22;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Cybersecurity Learning Resources</h1>
+        <p>Discover online platforms, books, and courses to help you master cybersecurity.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>What Are Cybersecurity Learning Resources?</h2>
+            <p>Cybersecurity learning resources include books, online courses, platforms, blogs, and communities that provide the knowledge and skills required to become proficient in securing digital systems. Whether you're just getting started or looking to specialize, these resources will help you on your journey.</p>
+        </section>
+
+        <section>
+            <h2>Top Cybersecurity Resources</h2>
+            <div class="resources-list">
+                <!-- Resource 1: TryHackMe -->
+                <div class="resource-card">
+                    <h3>TryHackMe</h3>
+                    <p>TryHackMe offers hands-on cybersecurity training with a variety of challenges and virtual labs, allowing you to practice real-world penetration testing and security skills.</p>
+                    <a href="https://www.tryhackme.com/" target="_blank">Visit TryHackMe</a>
+                </div>
+
+                <!-- Resource 2: Cybrary -->
+                <div class="resource-card">
+                    <h3>Cybrary</h3>
+                    <p>Cybrary offers a wide range of online courses covering various cybersecurity topics, from beginner to advanced levels, with certifications available upon completion.</p>
+                    <a href="https://www.cybrary.it/" target="_blank">Visit Cybrary</a>
+                </div>
+
+                <!-- Resource 3: Udemy Cybersecurity Courses -->
+                <div class="resource-card">
+                    <h3>Udemy Cybersecurity Courses</h3>
+                    <p>Udemy offers many affordable cybersecurity courses on a variety of topics, including ethical hacking, network security, and incident response.</p>
+                    <a href="https://www.udemy.com/courses/search/?q=cybersecurity" target="_blank">Visit Udemy</a>
+                </div>
+
+                <!-- Resource 4: OWASP -->
+                <div class="resource-card">
+                    <h3>OWASP</h3>
+                    <p>The Open Web Application Security Project (OWASP) is an online community dedicated to improving software security. It offers free resources, documentation, and security tools.</p>
+                    <a href="https://www.owasp.org/" target="_blank">Visit OWASP</a>
+                </div>
+
+                <!-- Resource 5: The Hacker News -->
+                <div class="resource-card">
+                    <h3>The Hacker News</h3>
+                    <p>The Hacker News is an excellent blog for staying updated on the latest in cybersecurity news, threats, vulnerabilities, and industry trends.</p>
+                    <a href="https://thehackernews.com/" target="_blank">Visit The Hacker News</a>
+                </div>
+
+                <!-- Resource 6: "The Web Application Hacker's Handbook" -->
+                <div class="resource-card">
+                    <h3>The Web Application Hacker's Handbook</h3>
+                    <p>This book is a must-read for anyone interested in web application security. It covers everything from identifying vulnerabilities to exploiting and patching them.</p>
+                    <a href="https://www.amazon.com/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470" target="_blank">Buy on Amazon</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Cybersecurity Learning Resources - All Rights Reserved.</p>
+        <p><a href="https://www.owasp.org/" target="_blank">Visit OWASP for more security resources</a></p>
+    </footer>
+
+</body>
+</html>
