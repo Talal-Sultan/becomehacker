@@ -3,124 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Security & Computers</title>
+    <meta name="description" content="Learn Ethical Hacking with Interactive Animations and Visual Style.">
+    <title>Learn Ethical Hacking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <style>
-        /* General Reset */
+        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
+        /* Body Style */
         body {
-            font-family: Arial, sans-serif;
-            background: #101820;
-            color: #f5f5f5;
-            overflow-x: hidden;
-        }
-
-        /* Background Animation */
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #00c6ff, #0072ff);
-            animation: backgroundAnimation 8s infinite linear;
-            z-index: -1;
-        }
-
-        @keyframes backgroundAnimation {
-            0% { background: linear-gradient(45deg, #00c6ff, #0072ff); }
-            50% { background: linear-gradient(45deg, #ff0080, #ff5e00); }
-            100% { background: linear-gradient(45deg, #00c6ff, #0072ff); }
-        }
-
-        /* Centered Content */
-        .content {
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        h1 {
-            font-size: 60px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #00ff99;
-            margin-bottom: 20px;
-            animation: fadeIn 3s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            opacity: 0;
-            animation: fadeInText 4s ease-in-out forwards;
-        }
-
-        @keyframes fadeInText {
-            0% { opacity: 0; }
-            50% { opacity: 0.5; }
-            100% { opacity: 1; }
-        }
-
-        /* Button Animation */
-        .btn {
-            background-color: #00c6ff;
+            font-family: 'Roboto', sans-serif;
+            background: #222;
             color: #fff;
-            padding: 15px 30px;
-            font-size: 18px;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: transform 0.3s ease;
-            animation: bounceIn 2s ease-out;
+            line-height: 1.6;
+            font-size: 16px;
+            overflow-x: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        /* Global Settings */
+        h1, h2, h3 {
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+            color: #f1c40f;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .btn:hover {
+        /* Header Style */
+        header {
+            background: #1d1f21;
+            padding: 50px 0;
+            text-align: center;
+            border-bottom: 5px solid #f1c40f;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #f1c40f;
+            color: #333;
             transform: scale(1.1);
         }
 
-        @keyframes bounceIn {
-            0% { transform: scale(0); }
-            60% { transform: scale(1.1); }
-            100% { transform: scale(1); }
+        /* Main Section */
+        main {
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            animation: fadeUp 1s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin: 15px 0;
+            font-size: 1.2rem;
         }
 
         /* Footer */
         footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            background: #1d1f21;
+            color: #ccc;
             padding: 20px;
-            background-color: #222;
             text-align: center;
-            color: #fff;
+            position: relative;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        /* Button Animation */
+        .cta-btn {
+            background-color: #f1c40f;
+            color: #333;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .cta-btn:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="background"></div>
+    <!-- Header Section -->
+    <header>
+        <h1>Learn Ethical Hacking</h1>
+        <p>Start your journey into the world of ethical hacking and cybersecurity.</p>
+    </header>
 
-    <div class="content">
-        <h1>Cyber Security & Computers</h1>
-        <p>Welcome to the digital world where your security is our priority. Learn how to protect yourself and your devices from online threats. Stay safe in the virtual space with the latest computer security measures and practices.</p>
-        <a href="https://talal-sultan.github.io/becomehacker/learn_more.html">
-            <button class="btn">Learn More</button>
-        </a>
-    </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#tools">Tools</a>
+        <a href="#resources">Resources</a>
+        <a href="#ethics">Ethics</a>
+    </nav>
 
+    <!-- Main Content Section -->
+    <main>
+        <section id="intro">
+            <h2>What is Ethical Hacking?</h2>
+            <p>Ethical hacking, or penetration testing, involves using hacking skills for legal and constructive purposes such as testing security systems, finding vulnerabilities, and enhancing security measures.</p>
+            <p>Learn to think like a hacker and protect organizations from malicious attacks!</p>
+        </section>
+
+        <section id="tools">
+            <h2>Essential Tools for Ethical Hacking</h2>
+            <p>To get started with ethical hacking, you need to familiarize yourself with the following tools:</p>
+            <ul>
+                <li><strong>Wireshark:</strong> A tool for capturing and analyzing network packets.</li>
+                <li><strong>Nmap:</strong> A powerful network scanner for discovering hosts and services.</li>
+                <li><strong>Metasploit:</strong> A framework for penetration testing, including exploits and payloads.</li>
+                <li><strong>Burp Suite:</strong> A set of tools for web application security testing.</li>
+            </ul>
+            <a href="https://www.tryhackme.com/" target="_blank" class="cta-btn">Start Practicing Now!</a>
+        </section>
+
+        <section id="resources">
+            <h2>Learning Resources</h2>
+            <p>There are many online resources to help you master ethical hacking:</p>
+            <ul>
+                <li><strong>Books:</strong> "The Web Application Hacker's Handbook" and "Hacking: The Art of Exploitation".</li>
+                <li><strong>Courses:</strong> Platforms like Udemy, Coursera, and Cybrary offer courses on ethical hacking.</li>
+                <li><strong>CTFs:</strong> Participate in Capture The Flag challenges on platforms like Hack The Box and TryHackMe.</li>
+            </ul>
+        </section>
+
+        <section id="ethics">
+            <h2>Ethics & Responsibility</h2>
+            <p>As an ethical hacker, it's crucial to follow ethical guidelines to ensure your actions are legal and beneficial. Here are a few core principles:</p>
+            <ul>
+                <li>Always get permission before testing systems or networks.</li>
+                <li>Report vulnerabilities responsibly and do not exploit them.</li>
+                <li>Respect privacy and comply with relevant laws and regulations.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Cyber Security & Computers. All Rights Reserved.</p>
+        <p>&copy; 2024 Learn Ethical Hacking - All Rights Reserved.</p>
+        <p><a href="https://www.owasp.org/" target="_blank">Visit OWASP for more resources</a></p>
     </footer>
 </body>
 </html>
