@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An introduction to ethical hacking with animated design and modern styling.">
+    <title>Introduction to Ethical Hacking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #222;
+            color: #fff;
+            line-height: 1.6;
+            font-size: 16px;
+            animation: fadeIn 1.5s ease-in-out;
+            overflow-x: hidden;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header Style */
+        header {
+            background: #1d1f21;
+            padding: 50px 0;
+            text-align: center;
+            border-bottom: 5px solid #f1c40f;
+            animation: slideDown 1.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        /* Main Content Style */
+        main {
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            animation: fadeUp 1s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f1c40f;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #ccc;
+            text-align: justify;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 20px;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: #f1c40f;
+            color: #333;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .cta-btn:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #1d1f21;
+            color: #ccc;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Introduction to Ethical Hacking</h1>
+        <p>Learn the basics of ethical hacking and cybersecurity to help organizations stay secure.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>What is Ethical Hacking?</h2>
+            <p>Ethical hacking is the authorized practice of testing a computer system, network, or application for security vulnerabilities. Ethical hackers—also known as penetration testers—identify weaknesses in systems to help organizations strengthen their defenses before malicious hackers can exploit them.</p>
+        </section>
+
+        <section>
+            <h2>Why is Ethical Hacking Important?</h2>
+            <p>With the increasing number of cyber threats and attacks, ethical hacking is vital for organizations to ensure that their digital systems and networks are secure. By finding vulnerabilities before malicious actors do, ethical hackers help to protect sensitive data, secure networks, and maintain user privacy.</p>
+        </section>
+
+        <section>
+            <h2>Common Ethical Hacking Tools</h2>
+            <p>Ethical hackers use a variety of tools to carry out penetration tests and vulnerability assessments. Here are a few commonly used tools:</p>
+            <ul>
+                <li><strong>Wireshark:</strong> A network protocol analyzer that captures and inspects network traffic.</li>
+                <li><strong>Nmap:</strong> A network scanning tool used to discover hosts, services, and open ports on a network.</li>
+                <li><strong>Metasploit:</strong> A penetration testing framework used for testing and exploiting vulnerabilities.</li>
+                <li><strong>Burp Suite:</strong> A suite of tools for testing and exploiting web application vulnerabilities.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Getting Started with Ethical Hacking</h2>
+            <p>If you are new to ethical hacking, the best way to start is by learning the fundamentals of networking, security protocols, and common attack vectors. Once you understand these concepts, you can begin experimenting with different tools and techniques in a controlled environment.</p>
+            <a href="https://www.tryhackme.com/" target="_blank" class="cta-btn">Start Practicing Ethical Hacking</a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ethical Hacking Education - All Rights Reserved.</p>
+        <p><a href="https://www.owasp.org/" target="_blank">Visit OWASP for more resources on security.</a></p>
+    </footer>
+</body>
+</html>
